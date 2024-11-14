@@ -1,0 +1,199 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    background-color: white;
+}
+
+#headerTitle {
+    margin-left: 3rem;
+    display: flex;
+}
+
+#headerTitle h1:first-child {
+    color: #0f7f4a;
+    margin-right: .5rem;
+}
+
+a {
+    all: unset;
+}
+
+.headerLinks {
+    margin-right: 3rem;
+}
+
+.headerLinks a {
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.headerLinks a:hover {
+    color: #0f7f4a;
+}
+
+.headerButton {
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    background-color: #0f7f4a;
+    color: white;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+main {
+    margin-top: 5rem;
+}
+
+.welcome {
+    background-image: url("../img/sky.jpg");
+    background-position: top;
+    background-size: cover;
+    height: 40rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome h1 {
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+#recycleGreen {
+    color: #1ae38c;
+}
+
+.welcome p {
+    font-size: x-large;
+    margin-top: 0;
+    width: 30rem;
+    text-align: center;
+}
+
+.welcome button {
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #1ae38c;
+    font-size: medium;
+}
+
+.welcome button:hover {
+    background-color: #162b13;
+    color: #1ae38c;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion {
+    .accordion-item {
+      border-bottom: 1px solid lightgray;
+      button[aria-expanded='true'] {
+        border-bottom: 1px solid #0f7f4a;
+      }
+    }
+    button {
+      position: relative;
+      display: block;
+      text-align: left;
+      width: 50rem;
+      padding: 1em 0;
+      color: black;
+      font-size: 1.15rem;
+      font-weight: 400;
+      border: none;
+      background: none;
+      outline: none;
+      &:hover, &:focus {
+        cursor: pointer;
+        color: #0f7f4a;
+        &::after {
+          cursor: pointer;
+          color: #0f7f4a;
+          border: 1px solid #0f7f4a;
+        }
+      }
+      .accordion-title {
+        padding: 1em 1.5em 1em 0;
+      }
+      .icon {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        right: 0;
+        width: 22px;
+        height: 22px;
+        border: 1px solid;
+        border-radius: 22px;
+        &::before {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 9px;
+          left: 5px;
+          width: 10px;
+          height: 2px;
+          background: currentColor;
+        }
+        &::after {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 5px;
+          left: 9px;
+          width: 2px;
+          height: 10px;
+          background: currentColor;
+        }
+      }
+    }
+    button[aria-expanded='true'] {
+      color: #0f7f4a;
+      .icon {
+        &::after {
+          width: 0;
+        }
+      }
+      + .accordion-content {
+        opacity: 1;
+        max-height: 9em;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+      }
+    }
+    .accordion-content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 2em 0;
+      }
+    }
+  }

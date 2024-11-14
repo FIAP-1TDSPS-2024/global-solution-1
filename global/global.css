@@ -3,24 +3,9 @@ body {
   }
   
 * {
-  font-family: "Inter";
-    font-weight: normal;
+  font-family: "Montserrat";
   }
   
   .shadow {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  
-  footer {
-    background-color: #616161;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
-  }
-  
-  footer p {
-    font-weight: bold;
-    margin: 0;
-    font-size: 18px;
   }
