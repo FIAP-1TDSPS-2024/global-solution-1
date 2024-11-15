@@ -58,7 +58,7 @@ main {
     background-image: url("../img/sky.jpg");
     background-position: top;
     background-size: cover;
-    height: 40rem;
+    height: 90vh;
     color: white;
     display: flex;
     justify-content: center;
