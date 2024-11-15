@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="../global/global.css" />
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <title>Recycle Energy</title>
-  </head>
-  <body>
-    <div class="ilustration">
-      <div id="headerTitle">
-        <h1>Recycle</h1>
-        <h1>Energy</h1>
-      </div>
-      Economize com a gente
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../global/global.css" />
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+  <title>Recycle Energy</title>
+</head>
+
+<body>
+  <div class="ilustration">
+    <div id="headerTitle">
+      <h1>Recycle</h1>
+      <h1>Energy</h1>
     </div>
-    <form class="hireForm" method="dialog">
-      <div class="personType">
-        <label>Pessoa</label>
-        <div>
-          <input type="radio" id="fisica" name="typesPerson" />
-          <label for="fisica">Física</label>
-          <input type="radio" id="juridica" name="typesPerson" />
-          <label for="juridica">Jurídica</label>
-        </div>
-      </div>
-      <input type="text" placeholder="Nome" />
-      <input type="text" placeholder="Email" />
-      <input type="text" placeholder="Telefone" />
-      <input type="text" placeholder="Mensagem" />
-      <button type="submit">Contratar</button>
-    </form>
-  </body>
-  <script src="./scripts.js"></script>
+    Economize com a gente
+  </div>
+  <form class="hireForm" method="dialog">
+    <h2>Vamos mudar o futuro juntos!</h2>
+    <input type="text" placeholder="CPF/CNPJ" maxlength="14" />
+    <input type="text" placeholder="Nome" />
+    <input type="text" placeholder="Email" />
+    <input type="text" placeholder="Telefone" />
+    <textarea placeholder="Mensagem"></textarea>
+    <button type="submit" onclick="hire()">Contratar</button>
+  </form>
+</body>
+<script src="./scripts.js"></script>
+
 </html>
