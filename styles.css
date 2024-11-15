@@ -3,73 +3,73 @@ body {
 }
 
 .title {
-    font-size: 24px;
-    font-weight: bolder;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #green {
-    margin-right: 1rem;
-    color: #0f7f4a;
-  }
-  
-  main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .student {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .student > img {
-    width: 200px;
-    height: 200px;
-    border: 5px solid black;
-    border-radius: 50%;
-  }
-  
-  .nameRM {
-    font-size: 20px;
-    font-weight: bolder;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .links {
-    margin-top: 1rem;
-    width: 9rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  button {
-    padding: 1rem 3rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #12a566;
-    color: white;
-    cursor: pointer;
-    margin: 0 auto;
-    display: block;
-  }
-  
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+  font-size: 24px;
+  font-weight: bolder;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#green {
+  margin-right: 1rem;
+  color: #0f7f4a;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.student > img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+.nameRM {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.links {
+  margin-top: 1rem;
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #12a566;
+  color: white;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
