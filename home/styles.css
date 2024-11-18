@@ -48,6 +48,11 @@ a {
   padding-left: 3rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.headerButton:hover {
+  background-color: #1ae38c;
 }
 
 main {
@@ -94,6 +99,7 @@ main {
   padding-bottom: 1rem;
   background-color: #1ae38c;
   font-size: medium;
+  transition: background-color 0.3s;
 }
 
 .hireButton:hover {
