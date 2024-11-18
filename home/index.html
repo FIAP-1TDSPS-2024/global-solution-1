@@ -18,13 +18,17 @@
         <h1>Recycle</h1>
         <h1>Energy</h1>
       </div>
-      <div class="headerLinks">
+    <div class="hamburger-menu"></div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span class="navicon"></span>
+      </label>
+      <div class="menu">
         <a href="../index.html">Sobre Nós</a>
-        <a onclick="document.getElementById('faq').scrollIntoView();"
-          >Perguntas Frequentes</a
-        >
+        <a onclick="document.getElementById('faq').scrollIntoView();">Perguntas Frequentes</a>
         <button class="headerButton" onclick="hire()">Entre em contato</button>
       </div>
+    </div>
     </header>
     <main>
       <section class="welcome">
@@ -79,27 +83,27 @@
           </div>
         </div>
       </section>
-
-      <footer>
-        <div id="headerTitle">
-          <h1>Recycle</h1>
-          <h1>Energy</h1>
-        </div>
-        <section>
-          <div class="contact">
-            <img src="../img/email.svg" />
-            <a>contato@recycleenergy.com.br</a>
-          </div>
-          <div class="contact">
-            <img src="../img/whatsapp.svg" />
-            <a>+55 (11) 91234-5678</a>
-          </div>
-          <div id="copy">
-            &copy; 2024 Recycle Energy. Todos os direitos reservados
-          </div>
-        </section>
-      </footer>
     </main>
+    
+    <footer>
+      <div id="headerTitle">
+        <h1>Recycle</h1>
+        <h1>Energy</h1>
+      </div>
+      <section>
+        <div class="contact">
+          <img src="../img/email.svg" />
+          <a>contato@recycleenergy.com.br</a>
+        </div>
+        <div class="contact">
+          <img src="../img/whatsapp.svg" />
+          <a>+55 (11) 91234-5678</a>
+        </div>
+        <div id="copy">
+          &copy; 2024 Recycle Energy. Todos os direitos reservados
+        </div>
+      </section>
+    </footer>
   </body>
   <script src="./scripts.js"></script>
 </html>
