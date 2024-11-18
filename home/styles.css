@@ -73,6 +73,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .welcome h1 {
@@ -281,6 +282,20 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .welcome h1 {
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .welcome p {
+    font-size: x-large;
+    margin-top: 0;
+    width: 20rem;
+    text-align: center;
   }
 
   footer {
