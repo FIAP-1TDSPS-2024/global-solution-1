@@ -1,5 +1,10 @@
-body {
+body,
+html {
   display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .ilustration {
@@ -26,6 +31,10 @@ body {
 #headerTitle h1:first-child {
   color: #1ae38c;
   margin-right: 0.5rem;
+}
+
+#mediaTitle {
+  display: none;
 }
 
 .hireForm {
@@ -84,4 +93,27 @@ textarea {
 
 #message {
   height: 10rem;
+}
+
+@media (max-width: 1200px) {
+  .ilustration {
+    display: none;
+  }
+
+  .hireForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #mediaTitle {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #headerTitle {
+    margin-left: 0;
+  }
 }
