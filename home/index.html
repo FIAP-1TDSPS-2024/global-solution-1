@@ -74,11 +74,53 @@
         <div class="accordion">
           <div class="accordion-item">
             <button id="accordion-button-1" aria-expanded="false">
-              <span class="accordion-title">Porque energia?</span
+              <span class="accordion-title">Como posso me tornar um colaborador na sua empresa?</span
               ><span class="icon" aria-hidden="true"></span>
             </button>
             <div class="accordion-content">
-              <p>Ata, entendi tudo</p>
+              <p>Você ou sua empresa pode se tornar um colaborador sendo:<br>
+                - um ponto de coleta de lixo<br>
+                - ser um coletor de lixo<br>
+                - ser um patrocinador<br>
+                
+                Para se tornar um colaborador, basta digitar "Cadastro".</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title">Quero saber se preciso levar meu lixo pessoalmente?</span
+              ><span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>O lixo é coletador por colaboradores que se tornam parte da equipe da Recycle Energy. Todo o lixo produzido por você ou sua empresa é coletado diariamente pelos coletores e levado pra Recycle Energy, onde convertemos o lixo em energia e redistribuímos para nossos colaboradores e clientes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title">Como vocês garantem que o lixo se converta de forma eficiente em energia?</span
+              ><span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>Todos os resíduos possuem um material que pode se tornar energia elétrica (papel, borracha, lixo orgânico), combustível (plástico) ou economizar energia (metal e vidro).
+                Cada produto exige uma técnica diferente. Para fazer essa conversão, usamos técnicas como digestão anaeróbica e pirólise. Usando de métodos limpos, geramos créditos de carbono que podem ser usados para compensar as emissões de gases de efeito estufa.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title">Quais são os produtos relacionados ao meio ambiente que vocês oferecem?</span
+              ><span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>A Recycle Energy é responsável pela produção de energia elétrica, combustível e créditos de carbono através da conversão feita com o lixo. Graças as nossas tecnologias avançadas, é possível gerar energia de forma limpa e renovável, reduzindo o volume de resíduos que vão parar em aterros.</p>
             </div>
           </div>
         </div>
@@ -106,4 +148,18 @@
     </footer>
   </body>
   <script src="./scripts.js"></script>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "bce2c3ee-40cc-4bfa-be8f-d0fde4ab4fa8", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "1d2c3551-2bc9-4edf-a1f6-8b3917f0340a", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+  </script>
 </html>
