@@ -31,12 +31,19 @@
         Vamos mudar o futuro juntos
       </div>
       <h2>Entre em contato</h2>
-      <input type="text" placeholder="CPF/CNPJ" maxlength="14" />
-      <input type="text" placeholder="Nome" />
-      <input type="text" placeholder="Email" />
-      <input type="text" placeholder="Telefone" />
-      <textarea placeholder="Mensagem"></textarea>
-      <button type="submit" onclick="hire()">Entrar em contato</button>
+      <input
+        type="text"
+        oninput="validateForm()"
+        placeholder="CPF/CNPJ"
+        maxlength="14"
+      />
+      <input type="text" oninput="validateForm()" placeholder="Nome" />
+      <input type="email" oninput="validateForm()" placeholder="Email" />
+      <input type="text" oninput="validateForm()" placeholder="Telefone" />
+      <textarea placeholder="Mensagem" oninput="validateForm()"></textarea>
+      <button id="submit" type="submit" onclick="hire()">
+        Entrar em contato
+      </button>
     </form>
   </body>
   <script src="./scripts.js"></script>
